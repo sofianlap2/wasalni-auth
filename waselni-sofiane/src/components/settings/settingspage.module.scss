@@ -1,0 +1,220 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/fonts.scss';
+
+.container {
+    background-color: #E5E5E5;
+    min-height: 100vh;
+    padding: 0 20px;
+
+    @include breakpoint-reverse(tablet) {
+        padding: 0 50px;
+    }
+}
+
+.title {
+    margin: 0;
+    padding: 90px 0 40px 0;
+    text-align: center;
+    font-family: "Druk Medium";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+
+    @include breakpoint-reverse(tablet) {
+        padding: 197px 0 77px 0;
+        font-size: 52px;
+        line-height: 52px;
+    }
+}
+
+.email_column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_column {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include breakpoint-reverse(tablet) {
+        padding: 15px;
+    }
+}
+
+.btn_add {
+    background-color: #E5E5E5;
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    font-family: "Inter Medium";
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    margin-bottom: 30px;
+
+    @include breakpoint-reverse(tablet) {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+}
+
+.price_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.price_header {
+    font-family: "Inter Bold";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: black;
+    margin-right: 8px;
+
+    @include breakpoint-reverse(tablet) {
+        font-size: 22px;
+        line-height: 27px;
+        flex: 1 1 30%;
+        max-width: 30%;
+    }
+}
+
+.price_content {
+    font-family: "Inter Regular";
+    font-family: 400;
+    font-size: 9px;
+    line-height: 15px;
+
+    @include breakpoint-reverse(tablet) {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.price_edit {
+    margin-left: auto;
+    width: 10px;
+    height: 10px;
+    position: relative;
+
+    @include breakpoint-reverse(tablet) {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.btn_save {
+    background-color: black;
+    padding: 11px 30px;
+    min-width: 184px;
+    color: white;
+    font-family: "Inter Medium";
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 4px;
+    margin: 40px auto 0 auto;
+    display: block;
+    border: none;
+
+    @include breakpoint-reverse(tablet) {
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: 0;
+        padding: 17px 50px;
+        border-radius: 12px;
+    }
+}
+
+.table_container {
+    width: 100%;
+}
+
+.table_header {
+    border-bottom: none;
+    background : "#E5E5E5";
+    color: black;
+    font-weight: 700;
+    text-align: left;
+    font-family: "Inter Medium";
+    font-size: 12px;
+    line-height: 15px;
+
+    @include breakpoint-reverse(tablet) {
+        font-size: 28px;
+        line-height: 34px;
+        font-weight: 500;
+        padding-bottom: 30px;
+        border-bottom: 1px solid black;
+        width: max-content;
+    }
+}
+
+.table_row {
+    padding: 5px;
+    border-bottom: 1px solid black;
+    background-color: #E5E5E5;
+    font-size: 9px;
+    font-family: "Inter Medium";
+    font-weight: 500;
+
+    @include breakpoint-reverse(tablet) {
+        font-size: 21px;
+        line-height: 25px;
+    }
+}
+
+.edit_img {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+
+    @include breakpoint-reverse(tablet) {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.avatar_img {
+    width: 22px;
+    height: 22px;
+    position: relative;
+
+    @include breakpoint-reverse(tablet) {
+        width: 78px;
+        height: 78px;
+    }
+}
+
+.layout_content {
+    @include breakpoint-reverse(tablet) {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    @include breakpoint-reverse(desktop) {
+        gap: 80px;
+    }
+}
+
+.first_column {
+    @include breakpoint-reverse(tablet) {
+        flex: 1 1 56%;
+        max-width: 56%;
+    }
+}
+
+.second_column {
+    @include breakpoint-reverse(tablet) {
+        display: flex;
+        flex-direction: column;
+    }
+}
